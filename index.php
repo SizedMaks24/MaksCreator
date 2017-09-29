@@ -3,6 +3,6 @@ require 'vendor/autoload.php' ;
 echo "Hi,my name is Max";
 $app = new \atk4\ui\App('Добро Пожаловать!') ;
 $app->initLayout('Centered') ;
-$button = $app -> ('Button') ;
+$button = $app -> add('Button') ;
 $button ->set ('Registration') ;
 $button ->icon = 'plus' ;
