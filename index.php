@@ -6,3 +6,6 @@ $app->initLayout('Centered') ;
 $button = $app -> add('Button') ;
 $button ->set ('Registration') ;
 $button ->icon = 'plus' ;
+$button = $app -> add('Button') ;
+$button -> ('Login') ;
+$button ->icon = 'plus'
