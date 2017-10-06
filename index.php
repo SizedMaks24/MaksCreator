@@ -25,3 +25,6 @@ $button3->link('http://store.steampowered.com') ;
 $button3->icon = 'game' ;
 
 $button4 =$app->add(['button','Google','iconRight'=>'browser']) ;
+
+$bar =$app ->add(['ui'=>'vertical buttons']) ;
+$bar ->add(['button','Play','icon'=>'play']) ;
