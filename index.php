@@ -36,12 +36,12 @@ $button5->icon ='plus' ;
 
 $button6=$app ->add ('Button') ;
 $button6->set('heroku') ;
-$button6->addclas ('small dark blue') ;
+$button6->addClass ('small dark blue') ;
 $button6->link ('https://heroku.com') ;
 $button6->icon = 'plus' ;
 
 $button7=$app ->add ('Button') ;
 $button7->set('Twitch') ;
-$button7->addclas ('small purple') ;
+$button7->addClass ('small purple') ;
 $button7->link ('https://twitch.tv/') ;
 $button7->icon = 'plus' ;
