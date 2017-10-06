@@ -23,3 +23,5 @@ $button3->set('Steam') ;
 $button3->addClass('huge red') ;
 $button3->link('http://store.steampowered.com') ;
 $button3->icon = 'game' ;
+
+$button4 =$app->add(['button','Next','iconRight'=>'right arrow'])
