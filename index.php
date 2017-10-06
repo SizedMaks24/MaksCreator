@@ -34,16 +34,16 @@ $button5=$app ->add ('Button') ;
 $button5->set('YouTube') ;
 $button5->addClass('huge blue') ;
 $button5->link ('https://www.youtube.com/') ;
-$button5->icon ='video'
+$button5->icon ='video' ;
 
 $button6=$app ->add ('Button') ;
 $button6->set('heroku') ;
 $button6->addclas ('small dark blue') ;
-$button6 ->link ('https://heroku.com') ;
+$button6->link ('https://heroku.com') ;
 $button6->icon = 'plus' ;
 
 $button7=$app ->add ('Button') ;
 $button7->set('Twitch') ;
 $button7->addclas ('small purple') ;
-$button7 ->link ('https://twitch.tv/') ;
+$button7->link ('https://twitch.tv/') ;
 $button7->icon = 'plus' ;
