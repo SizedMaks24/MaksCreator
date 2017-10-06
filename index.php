@@ -4,8 +4,6 @@ require 'vendor/autoload.php' ;
 $app = new \atk4\ui\App('Добро Пожаловать!') ;
 $app->initLayout('Centered') ;
 
-
-
 $button1 = $app ->add ('Button') ;
 $button1->set('Registartation') ;
 $button1->addClass('massive red') ;
@@ -34,7 +32,7 @@ $button5=$app ->add ('Button') ;
 $button5->set('YouTube') ;
 $button5->addClass('huge blue') ;
 $button5->link ('https://www.youtube.com/') ;
-$button5->icon ='video' ;
+$button5->icon ='plus' ;
 
 $button6=$app ->add ('Button') ;
 $button6->set('heroku') ;
