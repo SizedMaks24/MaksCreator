@@ -7,3 +7,7 @@ $button = $app -> add('Button') ;
 $button ->set ('Registration') ;
 $button ->icon = 'plus' ;
 $button->link('https://vk.com') ;
+$button = $app -> add('Button') ;
+$button ->set ('Steam Profile') ;
+$button ->icon = 'laptop' ;
+$button->link('https://www.apple.com') ;
