@@ -16,10 +16,10 @@ $button2 = $app ->add ('Button') ;
 $button2->set('Apple') ;
 $button2->addClass('massive yellow') ;
 $button2->link('https://www.apple.com') ;
-$button2->icon = 'laptop'
+$button2->icon = 'laptop' ;
 
 $button3 = $app ->add ('Button') ;
 $button3->set('Steam') ;
 $button3->addClass('huge red') ;
 $button3->link('http://store.steampowered.com') ;
-$button3->icon = 'game'
+$button3->icon = 'game' ;
