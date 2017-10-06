@@ -4,17 +4,17 @@ echo "Hi,my name is Max";
 $app = new \atk4\ui\App('Добро Пожаловать!') ;
 $app->initLayout('Centered') ;
 
-$button = $app -> add('Button1') ;
+$button = $app -> add('Button') ;
 $button ->set ('Registration') ;
 $button ->icon = 'plus' ;
 $button->link('https://vk.com') ;
 
-$button = $app -> add('Button2') ;
+$button = $app -> add('Button') ;
 $button ->set ('Apple') ;
 $button ->icon = 'laptop' ;
 $button->link('https://www.apple.com') ;
 
-$button = $app -> add('Button3') ;
+$button = $app -> add('Button') ;
 $button ->set ('Steam ') ;
 $button ->icon = 'laptop' ;
 $button->link('http://store.steampowered.com') ;
