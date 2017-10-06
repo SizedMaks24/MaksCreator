@@ -28,4 +28,4 @@ $button4 =$app ->add ('Button') ;
 $button4->set('1a') ;
 $button3->addClass('huge green') ;
 $button4->link ('https://www.1a.lv/') ;
-$button4->icon - 'store'
+$button4->icon - 'store' ;
