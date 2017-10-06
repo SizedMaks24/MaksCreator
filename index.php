@@ -28,3 +28,5 @@ $button4 =$app->add(['button','Google','iconRight'=>'browser']) ;
 
 $bar =$app ->add(['ui'=>'vertical buttons']) ;
 $bar ->add(['button','Play','icon'=>'play']) ;
+$bar ->add(['button','Stop','icon'=>'stop']) ;
+$bar ->add(['button','Download','icon'=>'download']) ;
