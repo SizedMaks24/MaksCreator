@@ -29,3 +29,21 @@ $button4->set('1a') ;
 $button4->addClass('huge green') ;
 $button4->link ('https://www.1a.lv/') ;
 $button4->icon = 'game' ;
+
+$button5=$app ->add ('Button') ;
+$button5->set('YouTube') ;
+$button5->addClass('huge blue') ;
+$button5->link ('https://www.youtube.com/') ;
+$button5->icon ='video'
+
+$button6=$app ->add ('Button') ;
+$button6->set('heroku') ;
+$button6->addclas ('small dark blue') ;
+$button7 ->link ('https://dashboard.heroku.com/apps') ;
+$button6->icon = 'plus' ;
+
+$button7=$app ->add ('Button') ;
+$button7->set('Twitch') ;
+$button7->addclas ('small purple') ;
+$button7 ->link ('https://go.twitch.tv/') ;
+$button7->icon = 'plus' ;
