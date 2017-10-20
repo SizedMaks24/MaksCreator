@@ -33,7 +33,7 @@ $icon2 = $app ->add(['Image', $img2 ]) ;
 
 $a = 0 ;
 
-if ($a = 0) {
+if ($a == 0) {
  $name = 'Верно!' ;
 }else{
  $name = 'Неверно!' ;
@@ -91,9 +91,9 @@ if ($a != 0) {
 
 $label = $app->add(['Label',$name]) ;
 
-$a = test ;
+$a = 'test' ;
 
-if ($a = test) {
+if ($a == 'test') {
  $name = 'Верно!' ;
 }else{
  $name = 'Неверно!' ;
