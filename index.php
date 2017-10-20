@@ -32,3 +32,11 @@ $icon = $app ->add(['Image', $img ]) ;
 
 $text =$app ->add(['Text','Força Atletico Madrid']) ;
 $text->addParagraph('Fan') ;
+
+ $a = 3
+
+if ($a > 0) {
+  echo 'Верно!' ;
+}else{
+  echo 'Неверно!' ;
+}
