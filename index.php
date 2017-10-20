@@ -19,9 +19,9 @@ $text->addParagraph('Fan') ;
  $a = -4 ;
 
 if ($a > 0) {
-  echo 'Верно!' ;
+  $name = 'Верно!' ;
 }else{
-  echo 'Неверно!' ;
+  $name = 'Неверно!' ;
 }
 
-$label = $app->add(['Label','Last Games']) ;
+$label = $app->add(['Label',$name]) ;
