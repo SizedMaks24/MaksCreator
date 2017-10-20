@@ -30,3 +30,9 @@ $bar =$app ->add(['ui'=>'vertical buttons']) ;
 $bar ->add(['button','Play','icon'=>'play']) ;
 $bar ->add(['button','Stop','icon'=>'stop']) ;
 $bar ->add(['button','Download','icon'=>'download']) ;
+
+$img = 'http://2.bp.blogspot.com/-HWgpuULTHMc/UZnitEtOKwI/AAAAAAAAAOo/YZcxUkgFGps/s1600/Atletico+Madrid+FC+New+HD+Wallpaper+2013-2014.jpg';
+$icon = $app ->add(['Image', $img ]) ;
+
+$text =$app ->add(['Text','Força Atletico Madrid']) ;
+$text->addParagraph('Fan'); 
