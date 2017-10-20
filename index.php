@@ -18,7 +18,7 @@ $text->addParagraph('Fan') ;
 
  $a = 5 ;
 
-if ($a > 0) {
+if ($a == 0) {
   $name = 'Верно!' ;
 }else{
   $name = 'Неверно!' ;
