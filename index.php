@@ -22,9 +22,6 @@ $button3->addClass('huge yellow') ;
 $button3->link('http://store.steampowered.com') ;
 $button3->icon = 'game' ;
 
-<<<<<<< HEAD
-$button4 =$app->add(['button','Google','iconRight'=>'browser']) ;
-
 $bar =$app ->add(['ui'=>'vertical buttons']) ;
 $bar ->add(['button','Play','icon'=>'play']) ;
 $bar ->add(['button','Stop','icon'=>'stop']) ;
@@ -34,4 +31,4 @@ $img = 'http://2.bp.blogspot.com/-HWgpuULTHMc/UZnitEtOKwI/AAAAAAAAAOo/YZcxUkgFGp
 $icon = $app ->add(['Image', $img ]) ;
 
 $text =$app ->add(['Text','Força Atletico Madrid']) ;
-$text->addParagraph('Fan') ; 
+$text->addParagraph('Fan') ;
