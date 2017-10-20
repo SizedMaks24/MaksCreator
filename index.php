@@ -28,5 +28,75 @@ $label = $app->add(['Label',$name]) ;
 
 $label = $app->add(['Label','Last Games']) ;
 
-$img2 = 'https://www.bing.com/images/search?view=detailV2&ccid=qcKU9Unl&id=98FEC4CF88A4D5CF229873DF83A04E70D73FAC41&thid=OIF.YaA8CcY%2bjhez%2bNw3jO46vQ&q=fk+quarabag+vs+atletico&simid=73904513652&selectedIndex=8&ajaxhist=0';
+$img2 = 'https://www.apuestas-deportivas.com/wp-content/uploads/2017/10/Qarabag-v-Atlético-Madrid.jpg';
 $icon2 = $app ->add(['Image', $img2 ]) ;
+
+$a = 0 ;
+
+if ($a = 0) {
+ $name = 'Верно!' ;
+}else{
+ $name = 'Неверно!' ;
+}
+
+$label = $app->add(['Label',$name]) ;
+
+$a = 4 ;
+
+if ($a != 0) {
+ $name = 'Верно!' ;
+}else{
+ $name = 'Неверно!' ;
+}
+
+$label = $app->add(['Label',$name]) ;
+
+$a = -3 ;
+
+if ($a > -8) {
+ $name = 'Верно!' ;
+}else{
+ $name = 'Неверно!' ;
+}
+
+$label = $app->add(['Label',$name]) ;
+
+$a = 8 ;
+
+if ($a >= 9) {
+ $name = 'Верно!' ;
+}else{
+ $name = 'Неверно!' ;
+}
+
+$label = $app->add(['Label',$name]) ;
+
+$a = 12 ;
+
+if ($a <= 10) {
+ $name = 'Верно!' ;
+}else{
+ $name = 'Неверно!' ;
+}
+
+$label = $app->add(['Label',$name]) ;
+
+$a = 0 ;
+
+if ($a != 0) {
+ $name = 'Верно!' ;
+}else{
+ $name = 'Неверно!' ;
+}
+
+$label = $app->add(['Label',$name]) ;
+
+$a = test ;
+
+if ($a = test) {
+ $name = 'Верно!' ;
+}else{
+ $name = 'Неверно!' ;
+}
+
+$label = $app->add(['Label',$name]) ;
