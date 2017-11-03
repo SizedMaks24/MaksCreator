@@ -4,7 +4,7 @@ require 'vendor/autoload.php' ;
 $app = new \atk4\ui\App('Welocme to Fun Page') ;
 $app->initLayout('Centered') ;
 
-$button1 = $app ->add ('Button') ;
+/*$button1 = $app ->add ('Button') ;
 $button1->set('Atleticon Madrid') ;
 $button1->addClass('massive red') ;
 $button1->link('http://en.atleticodemadrid.com/') ;
@@ -99,4 +99,6 @@ if ($a == 'test') {
  $name = 'Неверно!' ;
 }
 
-$label = $app->add(['Label',$name]) ;
+$label = $app->add(['Label',$name]) ;*/
+$button = $app->layout->add(['Button','LINK TO FILE']) ;
+$button->link(['Test','Name'=>'Max']) ;
