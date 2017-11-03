@@ -102,3 +102,6 @@ if ($a == 'test') {
 $label = $app->add(['Label',$name]) ;*/
 $button = $app->layout->add(['Button','LINK TO FILE']) ;
 $button->link(['Test','Name'=>'Max']) ;
+
+$button = $app->layout->add(['Button','Link to SURNAME']) ;
+$button ->link(['Test','Surname'=>'Shvint']) ;
