@@ -1,7 +1,9 @@
 <?php
 require 'vendor/autoload.php' ;
+require 'Cat.php' ;
 
-$app = new \atk4\ui\App('Welocme to Fun Page') ;
+
+$app = new \atk4\ui\App('Welocome to the hardest game in the world!') ;
 $app->initLayout('Centered') ;
 
 /*$button1 = $app ->add ('Button') ;
@@ -99,6 +101,33 @@ if ($a == 'test') {
  $name = 'Неверно!' ;
 }
 
-$label = $app->add(['Label',$name]) ;*/
-$button = $app->layout->add(['Button','LINK TO FILE']) ;
-$button->link(['Test','Name'=>'Max','Surname'=>'Shvint']) ;
+$label = $app->add(['Label',$name]) ;
+
+$text=app->add(['Text','Push Delete Your Brains']) ;
+$button=$app->layout->add(['Button','Delete Your Brains']) ;
+$button->link(['Test',]) ;
+$button->addClass(['Big ornge']) ;*/
+
+$cat1 = new Cat ;
+$cat1->name='Dzujsa';
+$cat1->sex='Girl';
+$cat1->colour='Green';
+$cat1->age='8';
+
+$cat2 = new Cat ;
+$cat2->name='Fashist';
+$cat2->sex='Boy';
+$cat2->colour='Pink';
+$cat2->age='16';
+
+$cat3 = new Cat ;
+$cat3->name='King Arthur';
+$cat3->sex='Boy';
+$cat3->colour='Black';
+$cat3->age='12';
+
+$cat4 = new Cat ;
+$cat4->name='Stalin';
+$cat4->sex='Boy';
+$cat4->colour='White';
+$cat4->age='119';

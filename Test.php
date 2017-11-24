@@ -1,8 +1,13 @@
 <?php
 require 'vendor/autoload.php' ;
 
-$app = new \atk4\ui\App('Welocme to Fun Page') ;
+$app = new \atk4\ui\App('Game') ;
 $app->initLayout('Centered') ;
-$c = $_GET['Name'] ;
-$h = $_GET ['Surname'] ;
-$label = $app->add(['Label',$c.' '.$h]) ;
+$min=$_GET ['min'] ;
+$max=$_GET ['max'] ;
+$mid=round( ($min+$max)/2 );
+$button1 = $app->layout->add(['Мое число больше']) ;
+$button1->link(['Test','min'=$mid,'max'=$max]) ;
+$button2 = $app->layout->add(['Мое число меньше']) ;
+$button1->link(['Test',]) ;
+$button3 = $app->layout->add(['Оно верно!']) ;
