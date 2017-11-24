@@ -131,3 +131,5 @@ $cat4->name='Stalin';
 $cat4->sex='Boy';
 $cat4->colour='White';
 $cat4->age='119';
+$cat4->AgeCheck() ;
+$label=$app->add(['Label',$cat4->name.'  '.$answer]);
