@@ -136,24 +136,24 @@ $label=$app->add(['Label',$cat4->name.'  '.$answer */
 
 $Adidas1 = new Boots ;
 $Adidas1->name = 'Ace 17 + PureControl' ;
-$Adidas1->colour = 'Red' ;
+$Adidas1->color = 'red' ;
 $Adidas1->price = '$450' ;
-$label1 = $app->add(['Label',$Adidas1->name,$Adidas1->colour]);
+$label1 = $app->add(['Label',$Adidas1->name,$Adidas1->color]);
 
 $Adidas2 = new Boots ;
 $Adidas2->name = 'Ace 16.3 Primesh' ;
-$Adidas2->colour = 'White' ;
+$Adidas2->color = 'white' ;
 $Adidas2->price = '$80' ;
-$label2 = $app->add(['Label',$Adidas2->name,$Adidas2->colour]);
+$label2 = $app->add(['Label',$Adidas2->name,$Adidas2->color]);
 
 $Adidas3 = new Boots ;
 $Adidas3->name = 'X PureChaous' ;
-$Adidas3->colour = 'Green' ;
+$Adidas3->color = 'green' ;
 $Adidas3->price = '$250' ;
-$label3 = $app->add(['Label',$Adidas3->name,$Adidas3->colour]);
+$label3 = $app->add(['Label',$Adidas3->name,$Adidas3->color]);
 
 $Adidas4 = new Boots ;
 $Adidas4->name = 'Primeknit' ;
-$Adidas4->colour = 'Blue' ;
+$Adidas4->color = 'blue' ;
 $Adidas4->price = '$125' ;
-$label4 = $app->add(['Label',$Adidas4->name,$Adidas4->colour]);
+$label4 = $app->add(['Label',$Adidas4->name,$Adidas4->color]);
