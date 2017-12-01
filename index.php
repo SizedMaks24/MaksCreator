@@ -1,9 +1,9 @@
 <?php
 require 'vendor/autoload.php' ;
-require 'Cat.php' ;
+require 'Adidas.php' ;
 
 
-$app = new \atk4\ui\App('Welocome to the hardest game in the world!') ;
+$app = new \atk4\ui\App('Adidas : BE BETTER , DO BETTER') ;
 $app->initLayout('Centered') ;
 
 /*$button1 = $app ->add ('Button') ;
@@ -108,7 +108,7 @@ $button=$app->layout->add(['Button','Delete Your Brains']) ;
 $button->link(['Test',]) ;
 $button->addClass(['Big ornge']) ;*/
 
-$cat1 = new Cat ;
+/*$cat1 = new Cat ;
 $cat1->name='Dzujsa';
 $cat1->sex='Girl';
 $cat1->colour='Green';
@@ -132,4 +132,28 @@ $cat4->sex='Boy';
 $cat4->colour='White';
 $cat4->age='119';
 $cat4->AgeCheck() ;
-$label=$app->add(['Label',$cat4->name.'  '.$answer]);
+$label=$app->add(['Label',$cat4->name.'  '.$answer */
+
+$Adidas1 = New Boots ;
+$Adidas1->name = 'Ace 17 + PureControl' ;
+$Adidas1->colour = 'Red' ;
+$Adidas1->price = '$450' ;
+$label1 = $app->add(['Label',$Adidas1->name,$Adidas1->colour]);
+
+$Adidas2 = New Boots ;
+$Adidas2->name = 'Ace 16.3 Primesh' ;
+$Adidas2->colour = 'White' ;
+$Adidas2->price = '$80' ;
+$label2 = $app->add(['Label',$Adidas2->name,$Adidas2->colour]);
+
+$Adidas3 = New Boots ;
+$Adidas3->name = 'X PureChaous' ;
+$Adidas3->colour = 'Green' ;
+$Adidas3->price = '$250' ;
+$label3 = $app->add(['Label',$Adidas3->name,$Adidas3->colour]);
+
+$Adidas4 = New Boots ;
+$Adidas4->name = 'Primeknit' ;
+$Adidas4->colour = 'Blue' ;
+$Adidas4->price = '$125' ;
+$label4 = $app->add(['Label',$Adidas4->name,$Adidas4->colour]);
