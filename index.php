@@ -134,25 +134,25 @@ $cat4->age='119';
 $cat4->AgeCheck() ;
 $label=$app->add(['Label',$cat4->name.'  '.$answer */
 
-$Adidas1 = New Boots ;
+$Adidas1 = new Boots ;
 $Adidas1->name = 'Ace 17 + PureControl' ;
 $Adidas1->colour = 'Red' ;
 $Adidas1->price = '$450' ;
 $label1 = $app->add(['Label',$Adidas1->name,$Adidas1->colour]);
 
-$Adidas2 = New Boots ;
+$Adidas2 = new Boots ;
 $Adidas2->name = 'Ace 16.3 Primesh' ;
 $Adidas2->colour = 'White' ;
 $Adidas2->price = '$80' ;
 $label2 = $app->add(['Label',$Adidas2->name,$Adidas2->colour]);
 
-$Adidas3 = New Boots ;
+$Adidas3 = new Boots ;
 $Adidas3->name = 'X PureChaous' ;
 $Adidas3->colour = 'Green' ;
 $Adidas3->price = '$250' ;
 $label3 = $app->add(['Label',$Adidas3->name,$Adidas3->colour]);
 
-$Adidas4 = New Boots ;
+$Adidas4 = new Boots ;
 $Adidas4->name = 'Primeknit' ;
 $Adidas4->colour = 'Blue' ;
 $Adidas4->price = '$125' ;
