@@ -1,9 +1,8 @@
 <?php
 require 'vendor/autoload.php' ;
-require 'Adidas.php' ;
 
 
-$app = new \atk4\ui\App('Adidas : BE BETTER , DO BETTER') ;
+$app = new \atk4\ui\App('Please Register in Data Base') ;
 $app->initLayout('Centered') ;
 
 /*$button1 = $app ->add ('Button') ;
@@ -134,26 +133,54 @@ $cat4->age='119';
 $cat4->AgeCheck() ;
 $label=$app->add(['Label',$cat4->name.'  '.$answer */
 
-$Adidas1 = new Boots ;
+/*$Adidas1 = new Boots ;
 $Adidas1->name = 'Ace 17 + PureControl' ;
-$Adidas1->color = 'red' ;
+$Adidas1->colour = 'Red' ;
 $Adidas1->price = '$450' ;
-$label1 = $app->add(['Label',$Adidas1->name,$Adidas1->color,'detail'=>$Adidas1->price]);
+$label1 = $app->add(['Label',$Adidas1->name,$Adidas1->colour]);
 
 $Adidas2 = new Boots ;
 $Adidas2->name = 'Ace 16.3 Primesh' ;
-$Adidas2->color = 'white' ;
+$Adidas2->colour = 'White' ;
 $Adidas2->price = '$80' ;
-$label2 = $app->add(['Label',$Adidas2->name,$Adidas2->color,'detail'=>$Adidas2->price]);
+$label2 = $app->add(['Label',$Adidas2->name,$Adidas2->colour]);
 
 $Adidas3 = new Boots ;
 $Adidas3->name = 'X PureChaous' ;
-$Adidas3->color = 'green' ;
+$Adidas3->colour = 'Green' ;
 $Adidas3->price = '$250' ;
-$label3 = $app->add(['Label',$Adidas3->name,$Adidas3->color,'detail'=>$Adidas3->price]);
+$label3 = $app->add(['Label',$Adidas3->name,$Adidas3->colour]);
 
 $Adidas4 = new Boots ;
 $Adidas4->name = 'Primeknit' ;
-$Adidas4->color = 'blue' ;
+$Adidas4->colour = 'Blue' ;
 $Adidas4->price = '$125' ;
-$label4 = $app->add(['Label',$Adidas4->name,$Adidas4->color,'detail'=>$Adidas4->price]);
+$label4 = $app->add(['Label',$Adidas4->name,$Adidas4->colour]);*/
+
+$db = new
+\atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','') ;
+Class Friends extends \atk4\data\Model {
+  public $table ='friends' ;
+  function init () {
+parent::init() ;
+  $this->addField('name') ;
+  $this->addField('surname') ;
+  $this->addField('phone_number',['default'=>'+371']) ;
+  $this->addField('email') ;
+  $this->addField('birthday',['type'=>'date']) ;
+  $this->addField('notes',['type'=>'text']) ;
+}
+}
+
+
+$form = $app->layout->add('Form') ;
+$form ->setModel(new Friends($db));
+
+$form->onSubmit(function($form){
+$form->model->save();
+return $form->success('Record updated') ;
+}) ;
+$grid = $app->layout->add('Grid') ;
+$grid->setModel(new Friends($db)) ;
+$crud =$app->layout->add('CRUD') ;
+$crud->setModel(new Friends($db)) ;
