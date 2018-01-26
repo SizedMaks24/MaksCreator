@@ -192,6 +192,7 @@ $phone=$menu->addMenu('samsung') ;
 $phone->addItem('Galaxy S8','https://www.samsung.com/us/mobile/phones/galaxy-s/galaxy-s8-64gb--verizon--midnight-black-sm-g950uzkavzw/') ;
 $tabs = $app ->add('Tabs') ;
 $electonic = $tabs->addTab('Electronic');
+$image=$electronic->add(['Image', 'https://www.samsung.com/us/mobile/phones/galaxy-s/galaxy-s8-64gb--verizon--midnight-black-sm-g950uzkavzw/']) ;
 /*
 =======
 <?php
