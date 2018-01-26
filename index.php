@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 require 'vendor/autoload.php' ;
 
@@ -192,6 +192,7 @@ $phone=$menu->addMenu('samsung') ;
 $phone->addItem('Galaxy S8','https://www.samsung.com/us/mobile/phones/galaxy-s/galaxy-s8-64gb--verizon--midnight-black-sm-g950uzkavzw/') ;
 $tabs = $app ->add('Tabs') ;
 $electonic = $tabs->addTab('Electronic');
+/*
 =======
 <?php
 require 'vendor/autoload.php' ;
@@ -350,7 +351,7 @@ $Adidas4 = new Boots ;
 $Adidas4->name = 'Primeknit' ;
 $Adidas4->colour = 'Blue' ;
 $Adidas4->price = '$125' ;
-$label4 = $app->add(['Label',$Adidas4->name,$Adidas4->colour]);*/
+$label4 = $app->add(['Label',$Adidas4->name,$Adidas4->colour]);
 
 $db = new
 \atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','') ;
@@ -380,3 +381,4 @@ $grid->setModel(new Friends($db)) ;
 $crud =$app->layout->add('CRUD') ;
 $crud->setModel(new Friends($db)) ;
 >>>>>>> aeb8d9ec0c148147a043e4967e2581059161a526
+*/
