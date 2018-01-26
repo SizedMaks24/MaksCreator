@@ -3,7 +3,7 @@
 require 'vendor/autoload.php' ;
 
 
-$app = new \atk4\ui\App('Please Register in Data Base') ;
+$app = new \atk4\ui\App('Phone.lv') ;
 $app->initLayout('Centered') ;
 
 /*$button1 = $app ->add ('Button') ;
@@ -187,12 +187,20 @@ $crud =$app->layout->add('CRUD') ;
 $crud->setModel(new Friends($db)) ;] */
 
 $menu = $app->add('menu') ;
-$menu->addItem('phone','https://ss7.vzw.com/is/image/VerizonWireless/pdp-samsung-great-feature1-d-0817?$pngalpha$&scl=1&scl=2');
+$menu->addItem('phone','https://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note-8-sm-n950.jpg');
 $phone=$menu->addMenu('samsung') ;
-$phone->addItem('Galaxy S8','https://www.samsung.com/us/mobile/phones/galaxy-s/galaxy-s8-64gb--verizon--midnight-black-sm-g950uzkavzw/') ;
+$phone->addItem('Galaxy S8','https://www.vodafone.co.uk/cs/groups/public/documents/webcontent/vfcon079860.jpg') ;
+$phone->addItem('Note 8','https://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note-8-sm-n950.jpg') ;
+$phone->addItem('Samsung S8+','https://cnet2.cbsistatic.com/img/Gf4Ksbiewu79cMcdLZCrnnA8PFw=/770x433/2017/03/29/668be2fe-e1c3-451c-a7e5-e40a15291fe0/samsung-galaxy-s8-010.jpg') ;
+$phone->addItem('Samsung A8 2018','http://st1.bgr.in/wp-content/uploads/2017/12/Samsung-Galaxy-A8-2018-cover.jpg') ;
+
+
 $tabs = $app ->add('Tabs') ;
-$electonic = $tabs->addTab('Electronic');
-$image=$electronic->add(['Image', 'https://www.samsung.com/us/mobile/phones/galaxy-s/galaxy-s8-64gb--verizon--midnight-black-sm-g950uzkavzw/']) ;
+$electronic = $tabs->addTab('Electronic');
+$image = $electronic->add(['image', 'https://www.vodafone.co.uk/cs/groups/public/documents/webcontent/vfcon079860.jpg']) ;
+
+$cars = $tabs->addItem('Cars') ;
+$image = $cars->add(['image','https://pictures.topspeed.com/IMG/crop/201707/this-one-off-lamborg-6_1600x0w.jpg']) ;
 /*
 =======
 <?php
