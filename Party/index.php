@@ -1,10 +1,11 @@
 
 <?php
 require 'vendor/autoload.php' ;
+require 'app.php' ;
 
 
-$app = new \atk4\ui\App('Phone.lv') ;
-$app->initLayout('Centered') ;
+$app = new App('public') ;
+
 
 /*$button1 = $app ->add ('Button') ;
 $button1->set('Atleticon Madrid') ;
@@ -157,7 +158,7 @@ $Adidas4->name = 'Primeknit' ;
 $Adidas4->colour = 'Blue' ;
 $Adidas4->price = '$125' ;
 $label4 = $app->add(['Label',$Adidas4->name,$Adidas4->colour]);*/
-/*
+
 $db = new
 \atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','') ;
 Class Friends extends \atk4\data\Model {
@@ -170,6 +171,7 @@ parent::init() ;
   $this->addField('email') ;
   $this->addField('birthday',['type'=>'date']) ;
   $this->addField('notes',['type'=>'text']) ;
+  $this->addField('age') ;
 }
 }
 
@@ -178,14 +180,31 @@ $form = $app->layout->add('Form') ;
 $form ->setModel(new Friends($db));
 
 $form->onSubmit(function($form){
-$form->model->save();
-return $form->success('Record updated') ;
+  If($form->model['age']>14) {
+    $form->model->save() ;
+	 $notifier = new \atk4\ui\jsNotify();
+	  $notifier->setColor('pink')
+	  ->setPosition('bottomLeft')
+	  ->setWidth('25')
+	  ->setContent('Mi tancuem pod minimal da da da')
+	  ->setIcon(' wheelchair ' )
+	  ->setTransition('flash') ;
+
+    return $notifier;
+  }else{
+    //return $form->error('age','Sorry') ;
+    return new \atk4\ui\jsExpression('document.location="error.php"') ;
+  }
 }) ;
+$button1 = $app ->add ('Button') ;
+$button1->link('admin.php') ;
+$button1->set('Admin') ;
+
 $grid = $app->layout->add('Grid') ;
 $grid->setModel(new Friends($db)) ;
 $crud =$app->layout->add('CRUD') ;
-$crud->setModel(new Friends($db)) ;] */
-
+$crud->setModel(new Friends($db)) ;
+/*
 $menu = $app->add('menu') ;
 $menu->addItem('phone','https://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note-8-sm-n950.jpg');
 $phone=$menu->addMenu('samsung') ;
@@ -201,7 +220,7 @@ $image = $electronic->add(['image', 'https://www.vodafone.co.uk/cs/groups/public
 
 $cars = $tabs->addItem('Cars') ;
 $image = $cars->add(['image','https://pictures.topspeed.com/IMG/crop/201707/this-one-off-lamborg-6_1600x0w.jpg']) ;
-/*
+
 =======
 <?php
 require 'vendor/autoload.php' ;
